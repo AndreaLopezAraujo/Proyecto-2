@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class camara : MonoBehaviour
 {
+    public AnimationCurve animy;
+    Keyframe[] ks;
     void Start ()
     {
+        Camera.main.transform.position=new Vector3(2.67f, 1.28f, -9.84f);
     }
 void SetObliqueness(float horizObl, float vertObl) {
         Matrix4x4 mat  = Camera.main.projectionMatrix;
